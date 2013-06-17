@@ -1,0 +1,280 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  Beginner:
+    default: true
+    permissions:
+    - groupmanager.notify.self
+    - essentials.balance
+    - essentials.others
+    - essentials.balancetop
+    - essentials.eco
+    - -essentials.eco.loan
+    - essentials.pay
+    - -essentials.sell
+    - -essentials.sellworth
+    - -essentials.worth
+    - essentials.afk
+    - essentials.afk.auto
+    - -essentials.book.*
+    - essentials.help.*
+    - essentials.list
+    - essentials.mail.*
+    - essentials.motd
+    - essentials.rules
+    - essentials.suicide
+    - essentials.back.*
+    - essentials.delhome
+    - essentials.home
+    - essentials.home.bed
+    - essentials.sethome
+    - essentials.sethome.bed
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.warps.*
+    - essentials.protect
+    - essentials.damage.*
+    - -essentials.damage.disable
+    - essentials.signs.use.*
+    - -essentials.signs.use.enchant
+    - -essentials.signs.use.free
+    - -essentials.signs.use.gamemode
+    - -essentials.signs.use.heal
+    - -essentials.signs.use.spawnmob
+    - -essentials.signs.use.time
+    - -essentials.signs.use.weather
+    - essentials.spawn
+    - hidestream.hidekick
+    - iConomy.holdings
+    - iConomy.help
+    - iConomy.payment
+    - iConomy.bank.*
+    - iConomy.list
+    - iConomy.rank
+    - iConomy.access
+    - lwc.protect
+    - lwc.shownotices
+    - modreq.mods
+    - modreq.request
+    - modreq.status
+    - towny.*
+    - -towny.admin
+    - -towny.command.townyadmin.*
+    - -towny.claimed.*
+    - -towny.command.townyworld.*
+    - -townychat.*
+    - -voxelsniper.*
+    - -worldborder.*
+    - -worldedit.*
+    - -worldguard.*
+    inheritance:
+    info:
+      prefix: '&7[&8Beginner&7]&e '
+      build: true
+      suffix: ''
+  Member:
+    default: false
+    permissions:
+    - essentials.kits.member
+    - essentials.book*
+    - essentials.compass
+    - essentials.depth
+    - essentials.getpos
+    - essentials.ignore
+    - essentials.info
+    - essentials.itemdb
+    - essentials.msg
+    - essentials.warp.list
+    - essentials.msg.url
+    inheritance:
+    - default
+    info:
+      prefix: '&7[&eMember&7]&e '
+      build: true
+      suffix: ''
+  Mod:
+    default: false
+    permissions:
+    - groupmanager.notify.*
+    - bm.tempban
+    - bm.notify
+    - bm.bminfo
+    - bm.notify.duplicateips
+    - bm.tempbanip
+    - bm.kick
+    - bm.mute
+    - bm.tempmute
+    - bm.unmute
+    - bm.warn
+    - bm.tempbanoffline
+    - lagg.*
+    - coreprotect.inspect
+    - coreprotect.lookup
+    - coreprotect.help
+    - essentials.afk.kickexempt
+    - essentials.list.hidden
+    - essentials.chat.ignoreexempt
+    - essentials.realname
+    - essentials.recipe
+    - essentials.seen.*
+    - essentials.whois
+    - essentials.ban.notify
+    - essentials.kick
+    - essentials.kick.notify
+    - essentials.mute.*
+    - essentials.ping
+    - essentials.socialspy
+    - essentials.sudo.exempt
+    - essentials.tempban
+    - essentials.tempban.offline
+    - essentials.jail.exempt
+    - essentials.keepxp
+    - essentials.sethome.multiple
+    - essentials.sethome.multiple.3
+    - essentials.teleport.cooldown.bypass
+    - essentials.top
+    - iConomy.admin.stats
+    - modreq.*
+    - -modreq.commentlimit
+    - -modreq.update
+    - -modreq.cleartickets
+    - -modreq.reload
+    - townychat.*
+    inheritance:
+    - member
+    info:
+      prefix: '&7[&eMod&7]&e '
+      build: true
+      suffix: ''
+  Admin:
+    default: false
+    permissions:
+    - groupmanager.*
+    - -groupmanager.mangaddp
+    - -groupmanager.mangdelp
+    - -groupmanager.mantogglevalidate
+    - -groupmanager.mantogglesave
+    - bm.*
+    - -bm.exempt.ban
+    - -bm.exempt.tempban
+    - -bm.exempt.mute
+    - -bm.exempt.tempmute
+    - -bm.exempt.banip
+    - coreprotect.*
+    - essentials.bigtree
+    - essentials.enchant
+    - essentials.enchant.*
+    - essentials.enchant.allowunsafe
+    - essentials.exp
+    - essentials.exp.set
+    - essentials.exp.give
+    - essentials.feed
+    - essentials.firework
+    - essentials.firework.fire
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.gamemode
+    - essentials.give
+    - essentials.hat
+    - essentials.heal
+    - essentials.item
+    - essentials.repair
+    - essentials.repair.armor
+    - essentials.repair.enchanted
+    - essentials.tree
+    - essentials.unlimited
+    - essentials.workbench
+    - essentials.msg.*
+    - essentials.nick.*
+    - -essentials.nick.others
+    - essentials.spawner.*
+    - essentials.ban.*
+    - essentials.banip
+    - essentials.broadcast
+    - essentials.burn
+    - essentials.clearinventory
+    - essentials.deljail
+    - essentials.enderchest.*
+    - essentials.essentials
+    - essentials.ext
+    - essentials.gc
+    - essentials.invsee.*
+    - essentials.jails
+    - essentials.kick.*
+    - essentials.kill
+    - essentials.killall
+    - essentials.lightning
+    - essentials.setjail
+    - essentials.sudo
+    - essentials.tempban.*
+    - essentials.thunder
+    - essentials.jail.*
+    - essentials.togglejail.*
+    - essentials.unban
+    - essentials.unbanip
+    - essentials.teleport.hidden
+    - essentials.vanish.*
+    - essentials.weather
+    - essentials.spawn.others
+    - essentials.worlds.*
+    - essentials.delhomes.others
+    - essentials.delwarp
+    - essentials.sethome.*
+    - essentials.tp.*
+    - essentials.tpall
+    - essentials.tphere
+    - essentials.tpo
+    - essentials.tpohere
+    - essentials.tppos
+    - essentials.teleport.*
+    - essentials.tptoggle.*
+    - essentials.warp.otherplayers
+    - essentials.chat*
+    - essentials.joinfullserver
+    - essentials.admin
+    - essentials.protect.damage.disable
+    - essentials.protect.exemptbreak
+    - essentials.protect.exemptplacement
+    - essentials.exempusage
+    - essentials.protect.ownerinfo
+    - essentials.signs.use.*
+    - hidestream.command.*
+    - iConomy.*
+    - -iConomy.admin.empty
+    - lwc.*
+    - modreq.*
+    - announcer.*
+    - towny.admin
+    - towny.*
+    - voxelsniper.*
+    - worldborder.*
+    - worldedit.*
+    - worldguard.*
+    inheritance:
+    - moderator
+    info:
+      prefix: '&7[&5Admin&7]&5&l '
+      build: true
+      suffix: ''
+  Owner:
+    default: false
+    permissions:
+    - '*'
+    inheritance:
+    - admin
+    info:
+      prefix: '&c[&4Owner&c]&4&l&o '
+      build: true
+      suffix: ''

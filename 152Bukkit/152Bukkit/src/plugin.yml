@@ -1,0 +1,3 @@
+main: kplugin.levelup.LevelUp
+name: LevelUp
+version: 1.0

@@ -1,0 +1,24 @@
+users:
+  danmw3:
+    group: Owner
+    subgroups: []
+    permissions: []
+  ElgarL:
+    group: Beginner
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  kenzierocks:
+    group: Admin
+    subgroups: []
+    permissions: []
+  KHobbits:
+    group: Beginner
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  snowleo:
+    group: Beginner
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
