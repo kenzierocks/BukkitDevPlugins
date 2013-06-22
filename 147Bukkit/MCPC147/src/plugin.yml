@@ -1,0 +1,11 @@
+main: k.mcpc147.spawnpoint.SpawnPoint
+name: SpawnPointProvider
+version: 1.0 Alpha
+commands:
+    spawnpoint:
+        description: Set a spawnpoint.
+        usage: /spawnpoint <player> [x] [y] [z]
+        permission: imported.spawnpoint
+permissions:
+    imported.spawnpoint:
+        default: op
