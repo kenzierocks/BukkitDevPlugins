@@ -1,0 +1,7 @@
+main: k.tp.TPExtended
+name: TPExtended
+version: 1.0
+commands:
+    tpl:
+        description: Use lightning to teleport.
+        usage: /tpl <otherplayer>|<<player> <otherplayer>>|<<x> <y> <z>>
