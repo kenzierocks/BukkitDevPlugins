@@ -21,7 +21,12 @@ public class TPExtended extends JavaPlugin {
 
 	private void enableAllTeleporters() {
 		for (TeleportType tt : TeleportType.values()) {
-			enableTeleporter(tt);
+			try {
+				enableTeleporter(tt);
+				getLogger().info("Added " + tt.name);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 	}
 

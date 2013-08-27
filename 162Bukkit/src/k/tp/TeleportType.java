@@ -3,10 +3,11 @@ package k.tp;
 import org.bukkit.command.CommandExecutor;
 
 public enum TeleportType {
-	LIGHTNING("tpl", k.tp.executors.Lightning.class, "Lightning Teleport");
+	LIGHTNING("tpl", k.tp.executors.Lightning.class, "Lightning Teleport"), EXPLOSION(
+			"tpe", k.tp.executors.Explosion.class, "Explosion Teleport");
 
 	public String cmd = "tpdef", name = "Default Teleport";
-	private Class<? extends CommandExecutor> exe = CommandExecutor.class;
+	private Class<? extends CommandExecutor> exe = TPExtended.class;
 
 	private TeleportType(String command,
 			Class<? extends CommandExecutor> executor, String ufn) {
@@ -18,8 +19,7 @@ public enum TeleportType {
 	public CommandExecutor executor() {
 		try {
 			return exe.newInstance();
-		} catch (InstantiationException e) {
-		} catch (IllegalAccessException e) {
+		} catch (Exception e) {
 		}
 		TPExtended.me.getLogger().warning(
 				"Using plugin as command executor for TeleportType " + name);
