@@ -9,5 +9,5 @@ commands:
         description: Teleports you with a explosion effect. Can be used in console when provided two players.
         usage: /tpe [player] <<otherplayer>|<x> <y> <z>>
     tps:
-        description: Teleports you with a smoke effect. Can be used in console when provided two players.
-        usage: /tpe [player] <<otherplayer>|<x> <y> <z>>
+        description: Teleports you with a smoke effect. Can be used in console when provided two players. Also, color can be used to specify what color hte smoke is, bloack or whit. Default is white.
+        usage: /tps [player] <<otherplayer>|<x> <y> <z>> [color]
